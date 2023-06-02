@@ -1,0 +1,715 @@
+.imgProductos {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-top: 1rem;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.colorBoton {
+    color: white;
+    background-color: #85bb65;
+}
+
+.colorBoton:hover {
+    background-color: green;
+    color: white;
+}
+
+header{
+    width: 100%;
+    background-color: #EAC7C7;
+}
+/* MARGIN */
+*{
+    margin: 0rem;
+    padding: 0rem;
+    overflow-x: hidden;
+}
+
+/* INDEX */
+
+body{
+    background-color: white;
+}
+
+/* Inicio de NAVBAR - Index*/
+
+
+.navbar{
+    display: block;
+}
+
+#container-logo{
+    display: flex;
+    justify-content: center;
+    height:4rem;
+}
+
+.navbar-toggler{
+    margin: 0.5rem;
+}
+
+
+.navbar-collapse{
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+}
+
+.navbar-nav{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.nav-item{
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+/* Inicio de MAIN - Index*/
+
+.main{
+    background-color: #EAC7C7;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+/* Texto Main */
+
+.col-texto-main{
+    display: flex;
+    align-items: center;
+    padding-right: 0rem;
+}
+
+#texto-main{
+   padding: 3.5rem;
+}
+
+.parrafo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    color: black;
+    letter-spacing: 0.2rem;
+    line-height: 1.1rem;
+}
+
+.titulo-main{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    color: black;
+    font-weight: 100;
+    line-height: 2.4rem;
+    margin: 2.6rem 0rem;
+}
+
+.btn1 {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-weight: 600;
+}
+
+.a_btn{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    text-decoration: none;
+    list-style: none;
+    color: black; 
+}
+
+#btn_img{
+    width: 2.5rem;
+    padding-left: 0.3rem;
+}
+
+/* Imagen Main */
+
+#img-main{
+max-width: 100%;
+height: auto;
+}
+
+
+/* Media Queries - Texto Main */
+
+/* Tablet - Desktop */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #texto-main{
+        padding: 2.9rem 3.5rem;
+    }
+     
+    .parrafo{
+        font-size: 0.7rem;
+        line-height: 1rem;
+    }
+     
+    .titulo-main{
+        font-size: 1.8rem;
+        line-height: 2rem;
+        margin: 1.9rem 0rem;
+    }
+
+    #img-main{
+        max-width: 100%;
+        height: 100%;
+        }
+}
+
+/* Tablet - Mobile */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    #texto-main{
+        padding: 3rem 12rem 3rem 3.5rem;
+    }
+     
+    .parrafo{
+        font-size: 0.7rem;
+        letter-spacing: 0.25rem;
+        line-height: 1rem;
+    }
+     
+    .titulo-main{
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        margin: 1.9rem 0rem;
+    }
+    
+}
+/* Mobile */
+@media screen and (max-width: 575px) {
+    #texto-main{
+        padding: 5rem 3.5rem;
+    }
+     
+    .parrafo{
+        font-size: 0.75rem;
+        letter-spacing: 0.15rem;
+        line-height: 1rem;
+    }
+     
+    .titulo-main{
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.7rem;
+        line-height: 2rem;
+        margin: 1.9rem 0rem;
+    }
+    
+}
+/* Fin de MAIN - Index*/
+
+
+/* Inicio de DESTACADO - Index*/
+
+#destacado{
+    height: auto;
+    background-color: #7DB9B6;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0rem;
+}
+
+.titulo-blanco{
+    color: white;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.parrafo-blanco{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1rem;
+    text-align:center;
+    letter-spacing: 0.2rem;
+    line-height: 1.4rem;
+}
+/* Media Queries - DESTACADO*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+     
+    .parrafo-blanco{
+        font-size: 0.8rem;
+    }
+
+    .titulo-blanco{
+        font-size: 1.8rem;
+        line-height: 2rem;
+        margin: 1.9rem 0rem;
+    }
+}
+/* Tablet - Mobile */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .titulo-blanco{
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+    
+    .parrafo-blanco{
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 575px) {
+    .titulo-blanco{
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
+
+    .parrafo-blanco{
+        font-size: 0.8rem;
+        line-height: 1.1rem;
+    }
+
+    #destacado{
+        padding: 4rem 3rem;
+    }
+}
+/* Fin de DESTACADO - Index*/
+
+/* Inicio del ARTICLES Index */
+
+.articles{
+    margin: 0rem;
+    padding: 4rem;
+}
+
+.card{
+    border: none;
+}
+
+.cards{
+    padding: 0.7rem;
+}
+
+.card-body{
+    padding: 0rem;
+    margin: 0rem;
+}
+
+.article-btn{
+    background-color: transparent;
+    font-weight: 600;
+    border-style: none;
+    padding: 1rem 0rem;
+}
+
+.btn{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+#btn-img{
+    width: 2.5rem;
+    padding-left: 0.3rem;
+}
+
+/* Media Queries - ARTICLES*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .articles{
+        padding: 3rem;
+    }
+
+    .cards{
+        padding: 0.6rem;
+    }
+}
+
+/* Tablet - Mobile */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .articles{
+        padding: 2.2rem;
+    }
+    .cards{
+        padding: 0.3rem;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 575px) {
+    .articles{
+        padding: 2rem;
+    }
+}
+
+
+/* Fin del ARTICLES - Index*/
+
+
+/* Inicio de CONTACTO Index */
+
+
+#contacto{
+    height: auto;
+    background-color: #ededed;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0rem;
+}
+
+.titulo-negro-centrado{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    color: black;
+    font-weight: 100;
+    line-height: 2.4rem;
+    margin: 1.3rem 0rem;
+    text-align: center;
+}
+
+.parrafo_negro-centrado{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    color: black;
+    letter-spacing: 0.3rem;
+    text-align: center;
+}
+
+.btn_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-contacto{
+    margin: 2rem 0rem;
+}
+
+/* Media Queries - Contacto Index */
+
+/* Tablet - Desktop */
+@media screen and (min-width: 768px) and (max-width: 1024px) {    
+    .parrafo_negro-centrado{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+     
+    .titulo-negro-centrado{
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+        margin: 1.9rem 0rem;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 575px) {
+     
+    .parrafo_negro-centrado{
+        font-size: 0.7rem;
+        line-height: 1rem;
+    }
+     
+    .titulo-negro-centrado{
+        font-size: 1.7rem;
+        line-height: 2rem;
+        margin: 1.9rem 0rem;
+    }
+    
+    #contacto{
+        padding: 4rem;
+    }
+}
+/* Fin de CONTACTO - Index*/
+
+/* Inicio de FOOTER */
+
+ul{
+    padding: 0rem;
+}
+
+.footer{
+    height: auto ;
+    background-color: black;
+    padding: 3rem;
+}
+
+.texto-footer{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+.redes-footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.mapa-footer{
+    display: inline-block;
+    padding: 0rem 1rem;  
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.1rem;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.a-mapa-footer{
+    text-decoration: none;
+    list-style: none;
+    color: #ffffff;
+}
+
+.img_redes_footer{
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Media Queries - Footer */
+
+/* Tablet */
+@media screen and (max-width: 768px){    
+    .texto-footer{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    .redes-footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mapa-footer{
+        display: block;
+        padding: 0.5rem 0rem;  
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .img_redes_footer{
+        width: 3rem;
+        height: 3rem;
+        margin: 1rem;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 576px){
+    .texto-footer{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    .redes-footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mapa-footer{
+        display: block;
+        padding: 0.5rem 0rem;  
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .img_redes_footer{
+        width: 3rem;
+        height: 3rem;
+        margin: 1rem;
+    }
+}
+
+/* Fin FOOTER */
+
+/* Fin INDEX*/
+
+* PÁGINA SERVICIOS */
+
+
+/* Comienza MAIN - Alquimia Infinito-servicios*/
+
+
+.main-servicios{
+    height: 36rem;
+    background-image: url(/img/radiestesia.png);
+    background-size: cover;
+    background-position-y:top;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#texto-main-servicios{
+    padding: 0rem 2rem;
+}
+
+.titulo-servicios{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.titulo-main-servicios{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    color: black;
+    font-weight: 100;
+    line-height: 2.4rem;
+    margin: 2.6rem 0rem;
+}
+
+/* Media Queries - Main Clases */
+
+/* Desktop */
+@media screen and (max-width: 1200px){
+    .titulo-main-servicios{
+        font-size: 1.7rem;
+        line-height: 2.1rem;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 769px) and (max-width: 991px) {  
+    .main-servicios{
+        background-position-y:bottom;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titulo-main-servicios{
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.6rem;
+        line-height: 1.95rem;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px){
+    .main-servicios{
+        background-position-y:bottom;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        padding-top: 4rem;
+    }
+
+    #texto-main-servicios{
+        text-align: center;
+    }
+
+    .main-servicios{
+        background-image: url(../img/);
+    }
+
+    .titulo-main-servicios{
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.55rem;
+        line-height: 1.9rem;
+    }
+}
+
+/* Inicio del MENU - Clases*/
+
+
+ul{
+    padding: 0rem;
+}
+
+.menu-servicios{
+    height: auto ;
+    padding: 3rem 0rem 2rem 0rem;
+}
+
+.texto-footer{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.menu-servicio{
+    display: inline-block;
+    padding: 0rem 4rem;  
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.a-menu-servicios{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+/* Media Queries - Menu Clases */
+
+/* Tablet */
+@media screen and (max-width: 992px) {  
+    .menu-servicio{
+        font-size: 16px; 
+        padding: 0rem 3rem;     
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px){
+    .menu-servicios{
+        display: none;
+    }  
+}
+
+
+/* Inicio de Clases - Clases*/
+
+.btn-servicio{
+   margin: 3rem 0rem;
+}
+
+#img-servicio{
+    width: 25rem;
+    margin: 0rem 4rem;
+    padding: 1.2rem;
+ }
+
+ .texto-servicio{
+    padding: 0rem 2rem;
+ }
+
+ .main2{
+    background-color:#ffffff;
+    margin: 0rem;
+    padding: 1rem 0rem;
+}
+
+.main1{
+    background-color:#ededed;
+    margin: 0rem;
+    padding: 1rem 0rem;
+}
+
+#texto-servicios{
+    padding: 2rem 3.5rem;
+ }
+
+/* Media Queries Clases - Clases */
+
+ /* Mobile */
+@media screen and (max-width: 768px){
+    .btn-servicio{
+        margin: 2rem 0rem 0rem 0rem;
+     }
+}
+
+
