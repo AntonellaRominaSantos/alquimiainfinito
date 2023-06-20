@@ -1,3 +1,193 @@
+header h1{
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+    padding: 30px 0;
+}
+.contenedor{
+    max-width: 1200px;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    contain: paint;
+}
+
+.contenedor .contenedor-items{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 30px;
+    grid-row-gap: 30px;
+    width: 70%;
+    transition: .3s;
+}
+.contenedor .contenedor-items .item{
+    max-width: 200px;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid #666;
+    border-radius: 10px;
+    padding: 20px;
+    transition: .3s;
+}
+.contenedor-items .item:hover{
+    box-shadow: 0 0 10px #666;
+    scale:  1.05;
+}
+.contenedor-items .item .img-item{
+    width: 100%;
+}
+.contendor-items .item .titulo-item{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+.contendor-items .item .precio-item{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+.contenedor-items .item .boton-item{
+    display: block;
+    margin: 10px auto;
+    border: none;
+    background: #7DB9B6;
+    color: #000;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.carrito{
+    border: 1px solid #666;
+    width: 35%;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: auto;
+    position: sticky !important;
+    top: 0;
+    transition: .3s;
+}
+.carrito .header-carrito{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+.carrito .carrito-item{
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #666;
+    padding: 20px;
+}
+.carrito .carrito-item img{
+    margin-right: 20px;
+}
+
+.carrito .carrito-item .carrito-item-titulo{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.carrito .carrito-item .selector-cantidad{
+    display: inline-block;
+    margin-right: 25px;
+}
+.carrito .carrito-item .carrito-item-cantidad{
+    border: none;
+    font-size: 18px;
+    background: transparent;
+    display: inline-block;
+    width: 30px;
+    padding: 5px;
+    text-align: center;
+}
+.carrito .carrito-item .selector-cantidad i{
+    font-size: 18px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.carrio .carrito-item .carrito-item-precio{
+    font-weight: bold;
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.carrito .carrito-item .btn-eliminar{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: #000;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #000;
+    cursor: pointer;
+    display: block;
+    background: transparent;
+    z-index: 20;
+}
+.carrito .carrito-item .btn-eliminar i{
+    pointer-events:none;
+}
+.carrito-total{
+    background-color: #f3f3f3;
+    padding: 30px;
+}
+.carrito-total .fila{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.carrito-total .btn-pagar{
+    display: block;
+    width: 100%;
+    border: none;
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.carrito-total .bt-pagar:hover{
+    scale: 1.05;
+}
+
+
+@media screen and (max-width:850px){
+    .contenedor{
+        display: block;
+    }
+    .contenedor-items{
+        width: 100% !important;
+    }
+    .carrito{
+        width: 100%;
+    }
+}
+
 .imgProductos {
     width: 150px;
     height: 150px;
@@ -13,17 +203,120 @@
 
 .colorBoton {
     color: white;
-    background-color: #85bb65;
+    background-color: #7DB9B6;
 }
 
 .colorBoton:hover {
-    background-color: green;
+    background-color: #7DB9B6;
     color: white;
 }
 
 header{
     width: 100%;
     background-color: #EAC7C7;
+}
+
+
+h1 {
+    margin: 16px;
+}
+
+#nuevaConsulta {
+    color: #85bb65;
+}
+
+#opciones {
+    font-weight: 300;
+}
+
+#opciones:hover {
+    color: white;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 0px;
+    color: #7DB9B6;
+    background-color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #7DB9B6;
+    color: white;
+    transition: 1s;
+}
+form {
+    padding: 16px;
+    margin: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+#inputConsulta {
+    width: 300px;
+    height: 24px;
+    margin: 8px;
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid #4719;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+
+input {
+    margin: 8px;
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid #444;
+}
+
+
+#ConsultasPendientes {
+    text-align: center;
+}
+
+h2 {
+    margin: 16px;
+    font-size: 18px;
+    text-align: center;
+    opacity: 70%;
+
+}
+#sugerencias {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column; 
+    place-items: center;
+}
+
+#listaSugerencias {
+    margin: 8px;
+    display: flex;
+}
+
+#sugerenciaConsulta {
+    margin: 8px;
+    opacity: 70%;    
+}
+ 
+#sugerenciaConsulta:hover {
+    opacity: 100%;
+}
+
+#sugerenciaConsulta button{
+    margin: 0px;
+    padding: 0px 8px;
+    height: 32px;
+    border-radius: 6px;
+    background-color: #444;
+    color: white;
 }
 /* MARGIN */
 *{
@@ -36,6 +329,7 @@ header{
 
 body{
     background-color: white;
+    font-family:sans-serif;
 }
 
 /* Inicio de NAVBAR - Index*/
