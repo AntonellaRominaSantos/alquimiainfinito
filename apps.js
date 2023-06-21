@@ -1,5 +1,10 @@
 var carritoVisible = false;
 
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+if (localStorage.getItem("carrito")) {
+    carrito = JSON.parse(localStorage.getItem("carrito"));
+}
+
 if(document.readyState=='loading'){
     document.addEventListener('DOMContentLoaded',ready)
 }else{
@@ -171,7 +176,17 @@ function hacerVisibleCarrito(){
     var carrito = document.getElementsByClassName('carrito')[0];
     carrito.style.marginRight = '0';
     carrito.style.opacity = '1';
+      
+
 
     var items = document.getElementsByClassName('contenedor-items')[0];
     items.style.width = '60%'; 
 }
+
+const saveLocal = () => {
+    localStorage.setItem("carrito",JSON.stringify(carrito));
+}
+
+JSON.parse(localStorage.getItem("carrito"));
+
+localStorage.setItem("carrito", JSON.stringify(carrito));
