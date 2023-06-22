@@ -268,3 +268,6 @@ fetch(sugerenciasConsulta)
     })
     .catch(error => console.log(error));
 
+if(result.isConfirmed) {
+    window.location.href="inicio,html";
+}

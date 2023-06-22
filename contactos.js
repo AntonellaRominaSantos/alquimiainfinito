@@ -13,7 +13,7 @@ fetch(listaComentario)
         divComentarios.innerHTML +=`
         <p>${comentarios.id}-</p>
         <h5> -${comentarios.Nombre}</h5>
-        <p>${comentarios.Comentarios}</p>
+        <p>${comentarios.Comentario}</p>
         <hr>
         `
         } )

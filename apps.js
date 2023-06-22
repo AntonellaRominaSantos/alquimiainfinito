@@ -190,3 +190,5 @@ const saveLocal = () => {
 JSON.parse(localStorage.getItem("carrito"));
 
 localStorage.setItem("carrito", JSON.stringify(carrito));
+
+//*
