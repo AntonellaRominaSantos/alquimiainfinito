@@ -1,4 +1,4 @@
-/*class Producto {
+class Producto {
     constructor(id, nombre, precio, img) {
         this.id = id;
         this.nombre = nombre;
@@ -12,9 +12,9 @@ const agrimonia = new Producto(1, "Agrimonia", 2500, "../img/aguafloral.png");
 const melisa = new Producto(2, "Melisa", 2500, "../img/aguasflorales.jpeg");
 const valeriana = new Producto(3, "Valeriana", 2500, "../img/aguafloral.png");
 const muerdago = new Producto(4, "Muerdago", 2500, "../img/aguasflorales.jpeg");
-const digitalis = new Producto(5, "Digitalis", 2500, "../img/aguasflorales.jpeg");
-const aconitum = new Producto(6, "Aconitum", 2500, "../img/aguafloral.png");
-const hamamelis = new Producto(7, "Hamamelis", 2500, "../img/aguasflorales.jpeg");
+const digitalis = new Producto(5, "Digitalis", 2500, "../img/aguafloral.png");
+const aconitum = new Producto(6, "Aconitum", 2500, "../img/aguasflorales.jpeg");
+const hamamelis = new Producto(7, "Hamamelis", 2500, "../img/aguafloral.png");
 const platacoloidal = new Producto(8, "Plata Coloidal", 2500, "../img/platacoloidal.png");
 
 const productos = [agrimonia, melisa, valeriana, muerdago, digitalis, aconitum, hamamelis, platacoloidal];
@@ -69,8 +69,6 @@ verCarrito.addEventListener("click", () => {
     mostrarCarrito();
 })
 
-
-
 const mostrarCarrito = () => {
     contenedorCarrito.innerHTML = "";
     carrito.forEach(producto => {
@@ -124,6 +122,7 @@ const calcularTotal = () => {
     total.innerHTML = `Total: $${totalCompra}`;
 }
 
+
 //botonfinalizarcompra
 
 let btnfinalizarCompra=document.getElementById("finalizarCompra");
@@ -145,13 +144,7 @@ btnfinalizarCompra.addEventListener("click",()=>{
 })
 
 
-if (result.isConfirmed){
-    window.location.href="inicio,html";
-}
-
-
-
-
+/*
 //Array de Consultas
 let Consulta = [];
 
@@ -171,7 +164,7 @@ formularioConsulta.addEventListener('submit', (e) => {
         agregarConsulta(inputConsulta.value)
     }
 })
-
+/*
 //Función agregar Consulta
 const agregarConsulta = (valorConsulta) => {
     const nuevaConsulta = document.createElement("li");
@@ -270,4 +263,4 @@ fetch(sugerenciasConsulta)
 
 if(result.isConfirmed) {
     window.location.href="inicio,html";
-}
+}*/

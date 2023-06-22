@@ -1,4 +1,4 @@
-header h1{
+/*header h1{
     text-align: center;
     font-size: 35px;
     color: #fff;
@@ -59,8 +59,8 @@ header h1{
     padding: 5px 15px;
     border-radius: 5px;
     cursor: pointer;
-}
-/*carrito*/
+}*/
+/*carrito
 .carrito{
     border: 1px solid #666;
     width: 35%;
@@ -189,7 +189,7 @@ header h1{
         width: 100%;
     }
 }
-
+*/
 .imgProductos {
     width: 150px;
     height: 150px;
