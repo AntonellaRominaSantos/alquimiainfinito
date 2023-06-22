@@ -217,11 +217,25 @@ header{
     width: 100%;
     background-color: #EAC7C7;
 }
-
+.finalizarCompra{
+    display: block;
+    width: 100%;
+    border: none;
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+}
 
 h1 {
     margin: 16px;
 }
+
 
 #nuevaConsulta {
     color: #85bb65;

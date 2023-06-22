@@ -131,13 +131,14 @@ btnfinalizarCompra.addEventListener("click",()=>{
         title:"Finalizar compra?",
         icon:"question",
         confirmButtonText:"Aceptar",
-        showCancelButtonText:"Cancelar"
+        showCancelButton:true,
+        cancelButtonText:"Cancelar"
     }).then((result)=>{
         if(result.isConfirmed){
             Swal.fire({
                 title:"Compra finalizada, Vuelva pronto",
                 icon: "success",
-                confirmButtonText:"Aceptar",
+                confirmButtonText:"Aceptar"
             })
         }
     })
