@@ -144,6 +144,7 @@ btnfinalizarCompra.addEventListener("click",()=>{
 })
 
 
+
 /*
 //Array de Consultas
 let Consulta = [];
@@ -164,7 +165,7 @@ formularioConsulta.addEventListener('submit', (e) => {
         agregarConsulta(inputConsulta.value)
     }
 })
-/*
+
 //Función agregar Consulta
 const agregarConsulta = (valorConsulta) => {
     const nuevaConsulta = document.createElement("li");
@@ -179,8 +180,8 @@ const agregarConsulta = (valorConsulta) => {
                             </button>
                             `
         ;
-
-//Agrego librería
+/*
+//Agrego librería//
 const ConsultaExistente = Consulta.find(nuevaConsulta => nuevaConsulta.querySelector('label').textContent.toLowerCase() === valorConsulta.toLowerCase());
 if (ConsultaExistente) {
     Toastify({
@@ -234,6 +235,7 @@ if (Consulta.length === 0) {
 }
 };
 
+/*
 
 //Fetch con Rutas Relativas
 const listaSugerencias = document.getElementById("listaSugerencias");
